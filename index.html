@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/output.css">
-    <title>Tailwind-CW-1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/output.css">
+  <title>Tailwind-CW-1</title>
 </head>
-<body>
-   
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+  <!-- Container -->
+  <div class="w-4/5 max-w-3xl h-2/5 bg-white rounded-lg shadow-lg overflow-hidden flex m-6">
+    <!-- Left Section (Image) -->
+    <div class="flex-1 flex items-center justify-center bg-gray-200">
+        <!-- Image Container with smaller width and padding -->
+        <div class="bg-gray-300 p-2 w-3/4 max-w-[250px] rounded-lg shadow-[4px_4px_10px_rgba(34,197,94,0.5)]">
+          <img 
+            src="air-jordan-xijpg.jpg" 
+            alt="Retro Shoe" 
+            class="rounded-lg w-full h-auto"
+          />
+        </div>
+      </div>
+    <!-- Right Section (Details) -->
+    <div class="flex-1">
+      <!-- Top Section (35% height, black background) -->
+      <div class="h-[35%] bg-black text-white flex flex-col justify-center px-6">
+        <h1 class="text-3xl font-bold">Retro Shoe</h1>
+        <!-- Flex container for price and stock -->
+        <div class="flex gap-5 items-center mt-2">
+          <p class="text-lg">$89.00</p>
+          <p class="text-sm uppercase text-green-500 font-semibold">In Stock</p>
+        </div>
+      </div>
+      <!-- Bottom Section (65% height, white background) -->
+      <div class="h-[65%] bg-white p-6 flex flex-col justify-between">
+        <!-- Sizes Section -->
+        <div class="flex space-x-4 mb-4">
+          <div class="w-10 h-10 bg-black text-white flex items-center justify-center rounded shadow-md">XS</div>
+          <div class="w-10 h-10 bg-white border border-gray-300 text-black flex items-center justify-center rounded shadow-md">S</div>
+          <div class="w-10 h-10 bg-white border border-gray-300 text-black flex items-center justify-center rounded shadow-md">M</div>
+          <div class="w-10 h-10 bg-white border border-gray-300 text-black flex items-center justify-center rounded shadow-md">L</div>
+          <div class="w-10 h-10 bg-white border border-gray-300 text-black flex items-center justify-center rounded shadow-md">XL</div>
+        </div>
+        
+        <!-- Buttons Section -->
+        <div class="flex items-center space-x-4">
+          <!-- Buy Now Button -->
+          <button class="px-6 py-2 bg-green-500 text-black font-bold border-4 border-black rounded-lg shadow-md">
+            Buy Now
+          </button>
+          <!-- Add to Bag Button -->
+          <button class="px-6 py-2 bg-white text-black border-4 border-black rounded-lg shadow-md">
+            Add to Bag
+          </button>
+          <!-- Heart Icon -->
+          <span class="text-black text-2xl font-semibold">♥</span>
+        </div>
+
+        <!-- Shipping Info -->
+        <div class="text-gray-600">
+            Free shipping on all continental US orders.
+          </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
